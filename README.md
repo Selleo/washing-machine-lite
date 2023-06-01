@@ -10,7 +10,8 @@ You start with one week view that will represent current week's reservations.
 - react-query
 - react-hook-form
 - reactstrap (react bootstrap library)
-- lodash, date-fns
+- date-fns (for date manipulation)
+- zod (for validation)
  
 During the assignment you can add any package you wish.
 

@@ -1,7 +1,7 @@
 import _reduce from "lodash/reduce";
 
 import * as t from "./../actions/actionTypes";
-import { WEEK_DAYS } from "../common/constants";
+import { WEEK_DAYS } from "../types";
 
 const defaultState = _reduce(
   WEEK_DAYS,
