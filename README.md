@@ -7,11 +7,10 @@ It has simple form that allows you to enter the times of reservations per week d
 You start with one week view that will represent current week's reservations.
 
 #### Libraries used 
-- redux and react-redux
-- redux-form
-- redux-datapicker
+- react-query
+- react-hook-form
 - reactstrap (react bootstrap library)
-- lodash, scss and moment.js
+- lodash, date-fns
  
 During the assignment you can add any package you wish.
 
