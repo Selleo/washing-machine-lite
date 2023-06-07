@@ -1,4 +1,5 @@
 import axios from 'axios'
+
 import { Reservation } from '../types'
 
 export const fetchReservation = async () => {

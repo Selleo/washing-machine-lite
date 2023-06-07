@@ -1,3 +1,3 @@
-import Reservations from "./Reservations";
+import Reservations from './Reservations'
 
-export { Reservations };
+export { Reservations }
