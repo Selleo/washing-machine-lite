@@ -17,11 +17,11 @@ During the assignment you can add any package you wish.
 
 To run your project you must run:
 
-`yarn && yarn start`
+`yarn run setup && yarn start`
 
 or corresponding `npm` commands
 
-you can reach server at `localhost:3000`
+you can reach JSON server at `localhost:3000` and Vite app at `localhost:4000`
 
 ## To finish your MVP you need to achieve those points:
 

@@ -24,7 +24,8 @@
     "serve": "vite preview",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx src/ --max-warnings=0",
     "start:server": "json-server --watch db.json",
-    "start:app": "vite"
+    "start:app": "vite",
+    "setup": "yarn && cp example.db.json db.json"
   },
   "devDependencies": {
     "@tanstack/eslint-plugin-query": "^4.29.9",
