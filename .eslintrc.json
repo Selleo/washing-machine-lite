@@ -1,6 +1,6 @@
 {
   "extends": ["react-app", "prettier", "react-app/jest"],
-  "plugins": ["prettier", "import", "simple-import-sort", "unused-imports"],
+  "plugins": ["prettier", "import", "simple-import-sort", "unused-imports","@tanstack/query"],
   "root": false,
   "rules": {
     "max-params": ["error", { "max": 5 }],

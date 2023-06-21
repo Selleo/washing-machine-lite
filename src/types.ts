@@ -1,7 +1,3 @@
-export type Reservation = {
-  id: string
-}
-
 export const WEEK_DAYS = [
   'monday',
   'tuesday',
@@ -20,3 +16,7 @@ export type SingleReservation = {
 export type ReservationFormValues = {
   [K in (typeof WEEK_DAYS)[number]]: SingleReservation[]
 }
+
+export type Reservation = {
+  id: number
+} & ReservationFormValues

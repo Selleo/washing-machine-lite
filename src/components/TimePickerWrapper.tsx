@@ -20,7 +20,7 @@ const TimePickerWrapper = ({ name }: TimePickerWrapperProps) => {
         onChange={(date) => {
           field.onChange(date)
         }}
-        selected={field.value}
+        selected={field.value ? new Date(field.value) : undefined}
         showTimeSelect
         showTimeSelectOnly
         timeIntervals={15}

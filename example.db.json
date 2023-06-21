@@ -1,0 +1,14 @@
+{
+  "reservations": [
+    {
+      "id": 1,
+      "monday": [],
+      "tuesday": [],
+      "wednesday": [],
+      "thursday": [],
+      "friday": [],
+      "saturday": [],
+      "sunday": []
+    }
+  ]
+}
