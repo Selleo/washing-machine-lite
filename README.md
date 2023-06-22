@@ -15,13 +15,18 @@ You start with one week view that will represent current week's reservations.
  
 During the assignment you can add any package you wish.
 
-To run your project you must run:
+## Setup
+When running the app FOR THE FIRST TIME you must run:
 
 `yarn run setup && yarn start`
 
-or corresponding `npm` commands
+## Running the project
 
-you can reach JSON server at `localhost:3000` and Vite app at `localhost:4000`
+Once you have run the setup, you can run the project with:
+
+`yarn start`
+
+It will start JSON server at `localhost:3000` and Vite app at `localhost:4000`
 
 ## To finish your MVP you need to achieve those points:
 
