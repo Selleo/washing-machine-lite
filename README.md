@@ -7,21 +7,26 @@ It has simple form that allows you to enter the times of reservations per week d
 You start with one week view that will represent current week's reservations.
 
 #### Libraries used 
-- redux and react-redux
-- redux-form
-- redux-datapicker
+- react-query
+- react-hook-form
 - reactstrap (react bootstrap library)
-- lodash, scss and moment.js
+- date-fns (for date manipulation)
+- zod (for validation)
  
 During the assignment you can add any package you wish.
 
-To run your project you must run:
+## Setup
+When running the app FOR THE FIRST TIME you must run:
 
-`yarn && yarn start`
+`npm run setup && npm start`
 
-or corresponding `npm` commands
+## Running the project
 
-you can reach server at `localhost:3000`
+Once you have run the setup, you can run the project with:
+
+`npm start`
+
+It will start JSON server at `localhost:3000` and Vite app at `localhost:4000`
 
 ## To finish your MVP you need to achieve those points:
 
