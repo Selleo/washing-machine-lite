@@ -3,11 +3,11 @@ import React from 'react'
 import { useFieldArray, useFormContext } from 'react-hook-form'
 import { Button, Col, Row } from 'reactstrap'
 
-import { ReservationFormValues, WEEK_DAYS } from '../types'
+import { ReservationFormValues, weekDay } from '../types'
 import TimePickerWrapper from './TimePickerWrapper'
 
 type SingleDayReservationProps = {
-  name: (typeof WEEK_DAYS)[number]
+  name: weekDay
 }
 const SingleDayReservations = ({ name }: SingleDayReservationProps) => {
   const {

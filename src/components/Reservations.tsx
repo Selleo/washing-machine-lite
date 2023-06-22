@@ -35,7 +35,7 @@ const Reservations = ({ reservations }: Props) => {
       queryClient.invalidateQueries({ queryKey: ['reservations'] })
     },
   })
-  const methods = useForm<ReservationFormValues>({ values: reservations })
+  const form = useForm<ReservationFormValues>({ values: reservations })
 
   const clearReservations = () => resetData.mutate()
   const onSubmit = async (data: ReservationFormValues) => {
@@ -44,8 +44,8 @@ const Reservations = ({ reservations }: Props) => {
 
   return (
     <Container className="reservations">
-      <FormProvider {...methods}>
-        <form onSubmit={methods.handleSubmit(onSubmit)}>
+      <FormProvider {...form}>
+        <form onSubmit={form.handleSubmit(onSubmit)}>
           <Row>
             <Col xs={8}>
               <h2>Reservations</h2>

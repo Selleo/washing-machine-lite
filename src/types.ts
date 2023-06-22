@@ -8,13 +8,15 @@ export const WEEK_DAYS = [
   'sunday',
 ] as const
 
+export type weekDay = (typeof WEEK_DAYS)[number]
+
 export type SingleReservation = {
   start: Date | null
   end: Date | null
 }
 
 export type ReservationFormValues = {
-  [K in (typeof WEEK_DAYS)[number]]: SingleReservation[]
+  [K in weekDay]: SingleReservation[]
 }
 
 export type Reservation = {
