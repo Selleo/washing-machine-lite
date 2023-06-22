@@ -18,13 +18,13 @@ During the assignment you can add any package you wish.
 ## Setup
 When running the app FOR THE FIRST TIME you must run:
 
-`yarn run setup && yarn start`
+`npm run setup && npm start`
 
 ## Running the project
 
 Once you have run the setup, you can run the project with:
 
-`yarn start`
+`npm start`
 
 It will start JSON server at `localhost:3000` and Vite app at `localhost:4000`
 
