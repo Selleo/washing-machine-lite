@@ -1,15 +1,11 @@
 import './Reservations.scss'
 
-import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query'
+import { useMutation, useQueryClient } from '@tanstack/react-query'
 import React from 'react'
 import { FormProvider, useForm } from 'react-hook-form'
-import { Button, Col, Container, Row, Spinner } from 'reactstrap'
+import { Button, Col, Container, Row } from 'reactstrap'
 
-import {
-  deleteReservation,
-  fetchReservation,
-  saveReservation,
-} from '../api/reservation'
+import { deleteReservation, saveReservation } from '../api/reservation'
 import { ReservationFormValues, WEEK_DAYS } from '../types'
 import SingleDayReservations from './SingleDayReservations'
 
@@ -21,13 +17,12 @@ const validate = (values: any) => {
   return errors
 }
 
-const Reservations = () => {
+type Props = {
+  reservations: ReservationFormValues
+}
+const Reservations = ({ reservations }: Props) => {
   const queryClient = useQueryClient()
 
-  const { data: reservations, isLoading } = useQuery({
-    queryKey: ['reservations'],
-    queryFn: fetchReservation,
-  })
   const resetData = useMutation({
     mutationFn: deleteReservation,
     onSuccess: () => {
@@ -46,7 +41,6 @@ const Reservations = () => {
   const onSubmit = async (data: ReservationFormValues) => {
     updateData.mutate(data)
   }
-  if (isLoading) return <Spinner />
 
   return (
     <Container className="reservations">
